@@ -10,7 +10,7 @@ interface TestStore extends TestState {
   setBiodata: (biodata: UserBiodata) => void;
 }
 
-export const useTestStore = create<TestStore>((set, get) => ({
+export const useTestStore = create<TestStore>((set) => ({
   currentQuestionIndex: 0,
   userAnswers: Array(iqQuestions.length).fill(null),
   score: 0,
