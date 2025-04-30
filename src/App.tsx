@@ -9,7 +9,7 @@ import BiodataForm from "./pages/biodata";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/app2">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/biodata" element={<BiodataForm />} />
